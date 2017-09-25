@@ -1,0 +1,56 @@
+<templateSet group="PHP">
+  <template name="chead" value="/***************************************************************&#10; *  (c) 2013 networkteam GmbH - all rights reserved&#10; ***************************************************************/" description="Inserts the header" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vard" value="\TYPO3\Flow\var_dump($END$);" description="typo3 var dump" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="flowanno" value="use TYPO3\Flow\Annotations as Flow;" description="Flow Annotation use statement" toReformat="false" toShortenFQNames="true" />
+  <template name="anno" value="use Neos\Flow\Annotations as Flow;" description="Annotations use statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ORM" value="use Doctrine\ORM\Mapping as ORM;" description="Doctrine Annotations" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="COL" value="@ORM\Column(type=&quot;$&quot;)" description="Doctrine Column Annotation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="OTM" value="@ORM\OneToMany(targetEntity=&quot;&quot;)" description="OneToMany Doctrine Annotation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="inject" value="@Flow\Inject" description="Flow Inject Annotation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Expression" value="false" />
+      <option name="PHP Statement" value="false" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+  <template name="timestamp" value="$TIMESTAMP$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TIMESTAMP" expression="timestamp()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+      <option name="PHP String Literal" value="true" />
+    </context>
+  </template>
+  <template name="exm" value="sprintf('$END$'), $TIMESTAMP$" description="Exception Message" toReformat="false" toShortenFQNames="true">
+    <variable name="TIMESTAMP" expression="timestamp()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
