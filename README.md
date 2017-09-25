@@ -2,21 +2,21 @@
 
 ## PHP
 
-**anno**
+### anno
 Annoations use stament for flow
 
 Expands to `use Neos\Flow\Annotations as Flow;`
 
-**chead**
+### chead
 Header for networkteam files
 
-**exm**
+### exm
 Exception message
 
 Expands to `sprintf('|', ), 1234567890` the latte being the exceoption code
 
-**inject**
+### inject
 Flow annotation for injection `@Flow\Innject`
 
-**timestamp**
+### timestamp
 Expands to the current timestamp
